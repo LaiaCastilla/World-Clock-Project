@@ -70,6 +70,14 @@ h2 {
   font-size: 20px;
   vertical-align: middle;
 }
+.homepage {
+  text-decoration: none;
+  color: #454647;
+  transition: all 150ms ease-in-out;
+}
+.homepage:hover {
+  color: #00396e;
+}
 footer {
   text-align: center;
   color: #454647;

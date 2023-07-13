@@ -54,7 +54,8 @@ function updateCity(event) {
             <div class="date">${cityDate}</div>
           </div>
           <div class="time">${cityTime}<small>${cityAMPM}</small></div>
-        </div>`;
+        </div>
+        <a class="homepage" href="/">Back to homepage</a>`;
   }
   updateTime();
   setInterval(updateTime, 1000);
