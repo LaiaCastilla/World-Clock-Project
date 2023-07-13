@@ -20,34 +20,40 @@
     <div class="container">
       <h1>World Clock</h1>
       <!-- <img src="images/melted-clock.png" alt="melted-clock" class="bck-img" /> -->
-      <select class="select">
+      <select class="select" id="select-city">
         <option value="">Select a city...</option>
-        <option value="">New York🇺🇸</option>
-        <option value="">London🇬🇧</option>
-        <option value="">New Delhi🇮🇳</option>
-        <option value="current-location">Current location</option>
+        <option value="America/New_York">New York🇺🇸</option>
+        <option value="Europe/London">London🇬🇧</option>
+        <option value="Asia/Kolkata">New Delhi🇮🇳</option>
+        <option value="Pacific/Honolulu">Honolulu🇺🇸</option>
+        <option value="America/Buenos_Aires">Buenos Aires🇦🇷</option>
+        <option value="Europe/Athens">Athens🇬🇷</option>
+        <option value="Africa/Nairobi">Nairobi🇰🇪</option>
+        <option value="Asia/Taipei">Taipei🇹🇼</option>
+        <option value="guess()">Current location</option>
       </select>
-
-      <div class="city" id="LA">
-        <div>
-          <h2>Los Angeles 🇺🇸</h2>
-          <div class="date">July 11th 2023</div>
+      <div id="cities">
+        <div class="city" id="LA">
+          <div>
+            <h2>Los Angeles 🇺🇸</h2>
+            <div class="date">July 11th 2023</div>
+          </div>
+          <div class="time">1:48:15 <small>AM</small></div>
         </div>
-        <div class="time">1:48:15 <small>AM</small></div>
-      </div>
-      <div class="city" id="bcn">
-        <div>
-          <h2>Barcelona 🇪🇸</h2>
-          <div class="date">July 11th 2023</div>
+        <div class="city" id="bcn">
+          <div>
+            <h2>Barcelona 🇪🇸</h2>
+            <div class="date">July 11th 2023</div>
+          </div>
+          <div class="time">1:48:15 <small>AM</small></div>
         </div>
-        <div class="time">1:48:15 <small>AM</small></div>
-      </div>
-      <div class="city" id="tokyo">
-        <div>
-          <h2>Tokyo 🇯🇵</h2>
-          <div class="date">July 11th 2023</div>
+        <div class="city" id="tokyo">
+          <div>
+            <h2>Tokyo 🇯🇵</h2>
+            <div class="date">July 11th 2023</div>
+          </div>
+          <div class="time">1:48:15 <small>AM</small></div>
         </div>
-        <div class="time">1:48:15 <small>AM</small></div>
       </div>
     </div>
     <footer>
