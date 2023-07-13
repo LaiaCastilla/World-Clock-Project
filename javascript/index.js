@@ -36,21 +36,28 @@ function updateTime() {
 }
 
 function updateCity(event) {
-  let cityTZ = event.target.value;
-  let cityName = cityTZ.replace("_", " ").split("/")[1];
+  function updateTime() {
+    let cityTZ = event.target.value;
+    if (cityTZ === "current-location") {
+      cityTZ = moment.tz.guess();
+    }
 
-  let cityTime = moment().tz(cityTZ).format("h:mm:ss");
-  let cityAMPM = moment().tz(cityTZ).format("A");
-  let cityDate = moment().tz(cityTZ).format("MMMM Do YYYY");
+    let cityName = cityTZ.replace("_", " ").split("/")[1];
+    let cityTime = moment().tz(cityTZ).format("h:mm:ss");
+    let cityAMPM = moment().tz(cityTZ).format("A");
+    let cityDate = moment().tz(cityTZ).format("MMMM Do YYYY");
 
-  let citiesSection = document.querySelector("#cities");
-  citiesSection.innerHTML = `<div class="city">
+    let citiesSection = document.querySelector("#cities");
+    citiesSection.innerHTML = `<div class="city">
           <div>
             <h2>${cityName}</h2>
             <div class="date">${cityDate}</div>
           </div>
           <div class="time">${cityTime}<small>${cityAMPM}</small></div>
         </div>`;
+  }
+  updateTime();
+  setInterval(updateTime, 1000);
 }
 updateTime();
 setInterval(updateTime, 1000);
