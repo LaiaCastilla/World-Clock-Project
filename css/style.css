@@ -33,14 +33,7 @@ h1 {
   font-size: 40px;
   font-family: "Bitter", serif;
 }
-.bck-img {
-  max-width: 400px;
-  position: absolute;
-  z-index: 1;
-  top: 25%;
-  right: 40px;
-  opacity: 0.5;
-}
+
 .city {
   display: flex;
   margin: 10px 0;
@@ -87,4 +80,56 @@ footer {
 .gitHub {
   text-decoration: none;
   color: #454647;
+}
+@media (max-width: 600px) {
+  .container {
+    max-width: 100%;
+    margin: 0 auto;
+    background-size: 500px;
+    background-position: 220px 140px;
+  }
+  h2 {
+    font-size: 30px;
+    font-family: "Bitter", serif;
+  }
+
+  .time {
+    font-size: 40px;
+    font-family: "Fira Code", monospace;
+    font-weight: 500;
+  }
+  .time small {
+    font-size: 20px;
+    vertical-align: middle;
+  }
+}
+@media (max-width: 420px) {
+  .container {
+    max-width: 100%;
+    margin: 0 auto;
+    background-size: 500px;
+    background-position: 100px 140px;
+    padding: 10px;
+  }
+  select {
+    font-size: 15px;
+  }
+  h2 {
+    margin: 0 0 5px;
+    font-size: 20px;
+    font-family: "Bitter", serif;
+  }
+
+  .time {
+    font-size: 30px;
+    font-family: "Fira Code", monospace;
+    font-weight: 500;
+  }
+  .time small {
+    font-size: 10px;
+    vertical-align: middle;
+  }
+  footer {
+    font-size: 12px;
+  }
 }
